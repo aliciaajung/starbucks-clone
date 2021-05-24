@@ -1,0 +1,63 @@
+@import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+*{
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.starbucks {
+    width: auto;
+    height: auto;
+    max-width: 70px;
+    max-height: 100%;
+}
+.left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.click {
+    padding-left: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.click > a {
+    text-decoration: none;
+    color: black;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+.right {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.right > a {
+    text-decoration: none;
+    color: black;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+.right>a:hover {
+    color: darkgreen;
+}
+.click>a:hover {
+    color: darkgreen;
+}
