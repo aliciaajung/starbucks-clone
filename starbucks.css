@@ -1,4 +1,11 @@
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+@font-face {font-family: "SoDo Sans SemiBold"; 
+    src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot"); 
+    src: url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold") format("svg"); }
 *{
     margin: 0;
 }
@@ -6,14 +13,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 50px;
     padding-right: 50px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+    z-index: 2;
 }
 .starbucks {
     width: auto;
     height: auto;
-    max-width: 70px;
+    max-width: 62px;
     max-height: 100%;
 }
 .left {
@@ -36,10 +46,51 @@
 .click > a {
     text-decoration: none;
     color: black;
-    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: 600;
+    font-family: "SoDo Sans SemiBold", sans-serif; 
+    font-weight: 700;
+    font-size: 15px;
     line-height: 1.5;
+    letter-spacing: .1em;
     -webkit-font-smoothing: antialiased;
+    font-feature-settings: "calt";
+}
+.signin {
+    min-width: 0;
+    min-height: 0;
+    display: inline-block;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    letter-spacing: -.01em;
+    cursor: pointer;
+}
+.signin:hover {
+    background-color: rgb(185, 183, 183);
+}
+.joinnow {
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.joinnow:hover {
+    background-color: rgb(185, 183, 183);
 }
 .right {
     width: 350px;
@@ -50,8 +101,8 @@
 .right > a {
     text-decoration: none;
     color: black;
-    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: 500;
+    font-family: SoDoSans, sans-serif;
+    font-weight: 600;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -60,4 +111,97 @@
 }
 .click>a:hover {
     color: darkgreen;
+}
+.learn {
+    color: black;
+}
+.learn:hover {
+    text-decoration: none;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+}
+.content {
+    font-family: "SoDo Sans SemiBold", sans-serif;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "calt";
+    line-height: 1.75;
+    background-color: #d8e8e3;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+    height: 66px;
+    text-align: center;
+    z-index: -1;
+}
+.banner2 {
+    display: flex;
+    padding-top: 32;
+    box-sizing: border-box;
+}
+.leftie {
+    height: auto;
+    width: 50%;
+    margin-right: 0;
+    background-color: #f1f8f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.writing {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 42;
+    text-align: center;
+    line-height: 1.5;
+}
+.coffee {
+    color: #1e3932;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+    font-feature-settings: "calt";
+    padding-bottom: 24;
+}
+.join {
+    color: #1e3932;
+    font-size: 19px;
+    line-height: 1.75;
+    font-family: "SoDo Sans SemiBold", sans-serif;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "calt";
+    padding-bottom: 24;
+}
+.star {
+    box-sizing: inherit;
+    width: 720;
+}
+.two {
+    display: inline-block;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    color: #1e3932;
+    font-family: "SoDo Sans SemiBold", sans-serif;
+}
+.two:hover {
+    background-color: rgba(185, 183, 183, 0.534);
 }
